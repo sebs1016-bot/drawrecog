@@ -23,7 +23,15 @@ def encode_image_to_base64(image_path):
     except FileNotFoundError:
         return "Error: La imagen no se encontró en la ruta especificada."
 
-
+st.markdown("""
+<style>
+.stApp {
+    background: linear-gradient(135deg, #000000, #434343);
+    color: #f5f5f5;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+</style>
+""", unsafe_allow_html=True) 
 # Streamlit 
 st.set_page_config(page_title='Tablero Inteligente')
 st.title('Tablero Inteligente')
